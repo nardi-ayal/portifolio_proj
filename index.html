@@ -1,379 +1,595 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- 
-    <meta charset="UTF-8">
 
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Nardos | Portfolio</title>
+    <title>Nardos Ayalneh | Portfolio</title>
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- Bootstrap -->
-<link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
 
-<!-- Bootstrap Icons -->
-<link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-<!-- My CSS -->
-<link rel="stylesheet" href="style.css">
-
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+    <!-- ================= SIDEBAR ================= -->
+<aside class="sidebar">
 
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-
-    <div class="container">
-
-        <a class="navbar-brand" href="#">Nardos</a>
-
-        <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
-
-            <span class="navbar-toggler-icon"></span>
-
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-
-            <ul class="navbar-nav ms-auto">
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-
-            </ul>
-
-        </div>
-
+    <!-- Profile -->
+    <div class="sidebar-profile">
+        <h2>Nardos Ayalneh</h2>
+        <p>Software Engineering Student</p>
     </div>
 
-</nav>
-    <!-- ================= HOME ================= -->
-<section id="home" class="hero">
+    <!-- Navigation -->
+    <nav class="sidebar-nav">
 
-    <div class="container">
+        <a href="#home">
+            <i class="bi bi-house-door"></i>
+            <span>Home</span>
+        </a>
 
-        <div class="row align-items-center">
+        <a href="#about">
+            <i class="bi bi-person"></i>
+            <span>About Me</span>
+        </a>
 
-            <!-- Text -->
-            <div class="col-md-7">
+        <a href="#skills">
+            <i class="bi bi-code-slash"></i>
+            <span>Skills</span>
+        </a>
 
-                <p class="intro">Hello, I'm</p>
+        <a href="#projects">
+            <i class="bi bi-folder"></i>
+            <span>Projects</span>
+        </a>
 
-                <h1>Nardos Ayalneh</h1>
+        <!-- DevVoltz Experience -->
+        <a href="#devvoltz">
+            <i class="bi bi-briefcase"></i>
+            <span>Experience</span>
+        </a>
 
-                <h2>Software Engineering Student</h2>
+        <a href="#contact">
+            <i class="bi bi-envelope"></i>
+            <span>Contact</span>
+        </a>
 
-                <p class="description">
-                    I am a fourth-year Software Engineering student
-                    interested in web development and software engineering.
-                    I enjoy learning new technologies and building projects.
+    </nav>
+
+</aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+
+        <!-- ================= HOME ================= -->
+
+        <section id="home" class="hero">
+
+            <div class="container-fluid hero-container">
+
+                <div class="row align-items-center">
+
+                    <!-- Introduction -->
+
+                    <div class="col-lg-6 hero-text">
+
+                        <p class="hero-label">
+                            HELLO, I'M
+                        </p>
+
+                        <h1>
+                            Nardos <span>Ayalneh</span>
+                        </h1>
+
+                        <h2>Software Engineering Student</h2>
+
+                        <p class="description">
+                            I'm a forth year Software Engineering student at Bahir Dar
+                            University, passionate about web development,
+                            software engineering, and creating meaningful
+                            digital solutions.
+                        </p>
+
+                        <div class="hero-buttons">
+
+                            <a href="#projects" class="btn btn-primary">
+                                View My Projects
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+
+                            <a href="#contact" class="btn btn-outline-dark">
+                                <i class="bi bi-envelope"></i>
+                                Get In Touch
+                            </a>
+
+                        </div>
+
+                        <div class="hero-social">
+
+                            <a href="#" aria-label="GitHub">
+                                <i class="bi bi-github"></i>
+                            </a>
+
+                            <a href="#" aria-label="LinkedIn">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+
+                            <a href="#" aria-label="Instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+
+                            <a href="#" aria-label="Telegram">
+                                <i class="bi bi-telegram"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Profile Photo -->
+
+                    <div class="col-lg-6 hero-photo-column">
+
+                        <div class="hero-photo-wrapper">
+
+                            <div class="photo-shape"></div>
+
+                            <img src="image/BDU1602231UR.JPG"
+                                alt="Portrait of Nardos Ayalneh"
+                                class="profile-photo">
+
+                            <div class="photo-note">
+                                Better Code<br>
+                                Bigger Dreams ♡
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about" class="about section-padding">
+
+            <div class="container-fluid content-container">
+
+                <div class="section-heading">
+                    <p class="section-label">GET TO KNOW ME</p>
+                    <h2>About Me</h2>
+                </div>
+
+                <div class="row align-items-center g-4">
+
+                    <div class="col-lg-5">
+
+                        <h3 class="about-title">
+                            A little about me
+                        </h3>
+
+                        <p>
+                            I'm a 4th year Software Engineering student at Bahir Dar
+                            University. I'm passionate about technology,
+                            software development, and creative work.
+                        </p>
+
+                        <p>
+                            I'm currently developing my skills in web
+                            development, programming, databases, and software
+                            engineering. I enjoy learning new technologies
+                            and building practical projects.
+                        </p>
+
+                        <p>
+                            I also work at
+                            <span class="about-highlight">
+                                DevVoltz Technology
+                            </span>
+                            as a Content Creator, where I develop my creativity
+                            and communication skills while working with technology.
+                        </p>
+
+                        <a href="#experience" class="text-link">
+                            More About Me
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="col-lg-4">
+
+                        <div class="quality-item">
+                            <div class="quality-icon">
+                                <i class="bi bi-code-slash"></i>
+                            </div>
+
+                            <div>
+                                <h4>Problem Solver</h4>
+                                <p>I enjoy finding creative solutions to challenges.</p>
+                            </div>
+                        </div>
+
+                        <div class="quality-item">
+                            <div class="quality-icon">
+                                <i class="bi bi-people"></i>
+                            </div>
+
+                            <div>
+                                <h4>Team Player</h4>
+                                <p>I value collaboration and learning from others.</p>
+                            </div>
+                        </div>
+
+                        <div class="quality-item">
+                            <div class="quality-icon">
+                                <i class="bi bi-lightbulb"></i>
+                            </div>
+
+                            <div>
+                                <h4>Continuous Learner</h4>
+                                <p>I'm always excited to explore new technologies.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-3">
+
+                        <div class="stats-panel">
+
+                            <h3>
+                                <i class="bi bi-bar-chart-line"></i>
+                                My Journey
+                            </h3>
+
+                            <div class="stat-item">
+                                <h4>3+</h4>
+                                <p>Years of Learning</p>
+                            </div>
+
+                            <div class="stat-item">
+                                <h4>5+</h4>
+                                <p>Projects and Practice</p>
+                            </div>
+
+                            <div class="stat-item">
+                                <h4>∞</h4>
+                                <p>Things to Learn</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= SKILLS ================= -->
+
+        <section id="skills" class="skills section-padding">
+
+            <div class="container-fluid content-container">
+
+                <div class="section-heading">
+                    <p class="section-label">WHAT I WORK WITH</p>
+                    <h2>My Skills</h2>
+                </div>
+
+                <p class="section-description">
+                    Technologies and tools I'm learning and using in my projects.
                 </p>
 
-                <a href="#projects" class="btn btn-primary">
-                    View My Projects
-                </a>
+                <div class="row g-3">
 
-                <a href="#contact" class="btn btn-outline-dark">
-                    Get In Touch
-                </a>
+                    <div class="col-6 col-md-4 col-xl">
+                        <div class="skill-card">
+                            <i class="bi bi-filetype-html skill-icon"></i>
+                            <h4>HTML</h4>
+                            <p>Web Structure</p>
+                        </div>
+                    </div>
 
-            </div>
+                    <div class="col-6 col-md-4 col-xl">
+                        <div class="skill-card">
+                            <i class="bi bi-filetype-css skill-icon"></i>
+                            <h4>CSS</h4>
+                            <p>Web Styling</p>
+                        </div>
+                    </div>
 
+                    <div class="col-6 col-md-4 col-xl">
+                        <div class="skill-card">
+                            <i class="bi bi-bootstrap skill-icon"></i>
+                            <h4>Bootstrap</h4>
+                            <p>Responsive Design</p>
+                        </div>
+                    </div>
 
-            <!-- Photo -->
-           <div class="col-md-5 text-center photo-column">
+                    <div class="col-6 col-md-4 col-xl">
+                        <div class="skill-card">
+                            <i class="bi bi-filetype-js skill-icon"></i>
+                            <h4>JavaScript</h4>
+                            <p>Web Programming</p>
+                        </div>
+                    </div>
 
-                <img src="image/BDU1602231UR.JPG"
-                     alt="Nardos Ayalneh"
-                     class="profile-photo">
+                    <div class="col-6 col-md-4 col-xl">
+                        <div class="skill-card">
+                            <i class="bi bi-cup-hot skill-icon"></i>
+                            <h4>Java</h4>
+                            <p>Programming</p>
+                        </div>
+                    </div>
 
-            </div>
+                    <div class="col-6 col-md-4 col-xl">
+                        <div class="skill-card">
+                            <i class="bi bi-database skill-icon"></i>
+                            <h4>SQL</h4>
+                            <p>Databases</p>
+                        </div>
+                    </div>
 
-        </div>
-
-    </div>
-
-</section>
-<!-- ================= ABOUT ================= -->
-
-<section id="about" class="about">
-
-    <div class="container">
-
-        <h2 class="section-title">About Me</h2>
-
-        <div class="row justify-content-center">
-
-            <div class="col-md-9 text-center">
-
-                <p>
-                    I am a third-year Software Engineering student
-                    at Bahir Dar University. I am passionate about
-                    technology, software development, and creative work.
-                </p>
-
-                <p>
-                    I am currently developing my skills in web development,
-                    programming, databases, and software engineering.
-                    I enjoy learning new technologies and building
-                    practical projects.
-                </p>
-
-                <p>
-                    I also work at
-                    <span class="about-highlight">
-                        Devvoltz Technology
-                    </span>
-                    as a Content Creator, where I develop my creativity
-                    and communication skills while working with technology.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- ================= SKILLS ================= -->
-<section id="skills" class="skills">
-
-    <div class="container">
-
-        <h2 class="section-title">My Skills</h2>
-
-        <div class="row g-4">
-
-            <!-- HTML -->
-            <div class="col-md-3 col-6">
-                <div class="skill-card">
-                    <i class="bi bi-filetype-html skill-icon"></i>
-                    <h4>HTML</h4>
-                    <p>Web Structure</p>
-                </div>
-            </div>
-
-            <!-- CSS -->
-            <div class="col-md-3 col-6">
-                <div class="skill-card">
-                    <i class="bi bi-filetype-css skill-icon"></i>
-                    <h4>CSS</h4>
-                    <p>Web Styling</p>
-                </div>
-            </div>
-
-            <!-- Bootstrap -->
-            <div class="col-md-3 col-6">
-                <div class="skill-card">
-                    <i class="bi bi-bootstrap skill-icon"></i>
-                    <h4>Bootstrap</h4>
-                    <p>Responsive Design</p>
-                </div>
-            </div>
-
-            <!-- Java -->
-            <div class="col-md-3 col-6">
-                <div class="skill-card">
-                    <i class="bi bi-cup-hot skill-icon"></i>
-                    <h4>Java</h4>
-                    <p>Programming</p>
-                </div>
-            </div>
-
-            <!-- C++ -->
-            <div class="col-md-3 col-6">
-                <div class="skill-card">
-                    <i class="bi bi-braces skill-icon"></i>
-                    <h4>C++</h4>
-                    <p>Programming</p>
-                </div>
-            </div>
-
-            <!-- SQL -->
-            <div class="col-md-3 col-6">
-                <div class="skill-card">
-                    <i class="bi bi-database skill-icon"></i>
-                    <h4>SQL</h4>
-                    <p>Database</p>
-                </div>
-            </div>
-
-            <!-- GitHub -->
-            <div class="col-md-3 col-6">
-                <div class="skill-card">
-                    <i class="bi bi-github skill-icon"></i>
-                    <h4>GitHub</h4>
-                    <p>Version Control</p>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- ================= PROJECTS ================= -->
-
-<section id="projects" class="projects">
-
-    <div class="container">
-
-        <h2 class="section-title">My Projects</h2>
-
-        <div class="row g-4">
-
-            <!-- Project 1 -->
-
-            <div class="col-md-4">
-
-                <div class="project-card">
-
-                    <h4>Movie Ticket Booking System</h4>
-
-                    <p>
-                        A simple movie ticket booking system
-                        developed as a programming project.
-                    </p>
-
-                    <span>C++</span>
-
-                    <br><br>
-
-                    <a href="#" class="btn btn-primary">
-                        View Project
-                    </a>
+                    <div class="col-6 col-md-4 col-xl">
+                        <div class="skill-card">
+                            <i class="bi bi-github skill-icon"></i>
+                            <h4>Git & GitHub</h4>
+                            <p>Version Control</p>
+                        </div>
+                    </div>
 
                 </div>
 
             </div>
 
+        </section>
 
-            <!-- Project 2 -->
 
-            <div class="col-md-4">
 
-                <div class="project-card">
+        <!-- ================= PROJECTS ================= -->
 
-                    <h4>Restaurant Website</h4>
+        <section id="projects" class="projects section-padding">
 
-                    <p>
-                        A responsive restaurant website with
-                        information about the restaurant and its menu.
-                    </p>
+            <div class="container-fluid content-container">
 
-                    <span>HTML | CSS | Bootstrap</span>
+                <div class="section-heading">
+                    <p class="section-label">SOME THINGS I'VE BUILT</p>
+                    <h2>Featured Projects</h2>
+                </div>
 
-                    <br><br>
+                <div class="row g-4">
 
-                    <a href="#" class="btn btn-primary">
-                        View Project
-                    </a>
+                    <div class="col-md-6 col-xl-4">
+
+                        <article class="project-card">
+
+                            <div class="project-image-placeholder">
+                                <i class="bi bi-journal-text"></i>
+                            </div>
+
+                            <div class="project-body">
+                                <p class="project-category">FULL-STACK DEVELOPMENT</p>
+
+                                <h3>My Diary</h3>
+
+                                <p>
+                                    A personal diary management system where
+                                    users can create, update, view, and delete
+                                    diary entries.
+                                </p>
+
+                                <div class="project-tags">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Node.js</span>
+                                    <span>MySQL</span>
+                                </div>
+
+                                <a href="https://github.com/nardi-ayal/my-diary"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="project-link">
+                                    View on GitHub
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <div class="col-md-6 col-xl-4">
+
+                        <article class="project-card">
+
+                            <div class="project-image-placeholder">
+                                <i class="bi bi-window"></i>
+                            </div>
+
+                            <div class="project-body">
+                                <p class="project-category">WEB DEVELOPMENT</p>
+
+                                <h3>Portfolio Website</h3>
+
+                                <p>
+                                    A personal portfolio website showcasing
+                                    my background, technical skills, and
+                                    development projects.
+                                </p>
+
+                                <div class="project-tags">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>Bootstrap</span>
+                                </div>
+
+                                <a href="#home" class="project-link">
+                                    Explore Portfolio
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <div class="col-md-6 col-xl-4">
+
+                        <article class="project-card">
+
+                            <div class="project-image-placeholder">
+                                <i class="bi bi-shop"></i>
+                            </div>
+
+                            <div class="project-body">
+                                <p class="project-category">WEB DESIGN</p>
+
+                                <h3>Restaurant Website</h3>
+
+                                <p>
+                                    A responsive restaurant website displaying
+                                    restaurant information and menu details.
+                                </p>
+
+                                <div class="project-tags">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>Bootstrap</span>
+                                </div>
+
+                                <a href="#projects" class="project-link">
+                                    Project Details
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+
+                        </article>
+
+                    </div>
 
                 </div>
 
             </div>
 
+        </section>
 
-            <!-- Project 3 -->
 
-            <div class="col-md-4">
 
-                <div class="project-card">
+        <!-- ================= EXPERIENCE ================= -->
 
-                    <h4>Event Management System</h4>
+<section id="devvoltz" class="devvoltz-section">
 
-                    <p>
-                        A university project designed to manage
-                        events and provide information to users.
-                    </p>
+    <div class="devvoltz-content">
 
-                    <span>Web Development</span>
+        <span class="section-tag">
+            MY PROFESSIONAL EXPERIENCE
+        </span>
 
-                    <br><br>
+        <h2>
+            Creating Impact with
+            <span>DevVoltz Technology</span>
+        </h2>
 
-                    <a href="#" class="btn btn-primary">
-                        View Project
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- ================= CONTACT ================= -->
-
-<section id="contact" class="contact">
-
-    <div class="container text-center">
-
-        <h2 class="section-title">Get In Touch</h2>
-
-        <p>
-            Feel free to connect with me through my social media accounts.
+        <p class="devvoltz-description">
+            I'm proud to be part of the DevVoltz Technology team,
+            contributing as a Content Creator and Team Member.
+            I help create engaging digital content and support
+            the company's online presence and brand communication.
         </p>
 
-        <div class="mt-4">
+        <div class="devvoltz-roles">
+            <span>✦ Content Creator</span>
+            <span>✦ Team Member</span>
+            <span>✦ Digital Content</span>
+        </div>
 
-            <p>
-                Instagram:
-                <a href="#" class="contact-link">
-                    @yuri_nadd
-                </a>
-            </p>
+        <a href="https://www.devvoltz.com/"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="devvoltz-button">
 
-            <p>
-                TikTok:
-                <a href="#" class="contact-link">
-                    @narrygrl
-                </a>
-            </p>
+            Explore DevVoltz
+            <span>↗</span>
 
-            <p>
-                Telegram:
-                <a href="#" class="contact-link">
-                    @Yuri_nad1
-                </a>
-            </p>
+        </a>
 
-            <p>
-                Email:
-                <a href="mailto:your@email.com" class="contact-link">
-                    nardosayalneh90@email.com
-                </a>
-            </p>
+    </div>
+
+    <div class="devvoltz-visual">
+
+        <div class="devvoltz-glow"></div>
+
+        <div class="devvoltz-card">
+
+            <div class="browser-bar">
+                <div class="browser-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="browser-address">
+                    devvoltz.com
+                </div>
+            </div>
+
+            <a href="https://www.devvoltz.com/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="devvoltz-preview-link">
+
+                <img
+                    src="https://image.thum.io/get/width/1000/crop/700/https://www.devvoltz.com/"
+                    alt="Preview of the official DevVoltz Technology website"
+                    class="devvoltz-preview">
+
+            </a>
+
+            <div class="preview-caption">
+                <div>
+                    <h3>DevVoltz Technology</h3>
+                    <p>Where Ideas Become Digital Reality</p>
+                </div>
+
+                <span class="live-indicator">↗</span>
+            </div>
 
         </div>
 
@@ -381,11 +597,140 @@
 
 </section>
 
-<footer class="footer">
+        <!-- ================= EDUCATION ================= -->
 
-    <p>© 2026 Nardos Ayalneh. All Rights Reserved.</p>
+        <section id="education" class="education section-padding">
 
-</footer>
+            <div class="container-fluid content-container">
+
+                <div class="section-heading">
+                    <p class="section-label">MY ACADEMIC BACKGROUND</p>
+                    <h2>Education</h2>
+                </div>
+
+                <div class="education-card">
+
+                    <div class="education-icon">
+                        <i class="bi bi-mortarboard"></i>
+                    </div>
+
+                    <div>
+                        <p class="education-year">Software Engineering</p>
+
+                        <h3>Bahir Dar University</h3>
+
+                        <p>
+                            Building my foundation in programming,
+                            software development, databases, and
+                            computer science.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section id="contact" class="contact section-padding">
+
+            <div class="container-fluid content-container">
+
+                <div class="section-heading">
+                    <p class="section-label">LET'S CONNECT</p>
+                    <h2>Get In Touch</h2>
+                </div>
+
+                <p class="section-description">
+                    I'm open to connecting with people, learning from
+                    new opportunities, and discussing technology.
+                </p>
+
+                <div class="contact-card">
+
+                    <div class="contact-item">
+                        <i class="bi bi-envelope"></i>
+
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:nardosayalneh90@email.com">
+                                nardosayalneh90@email.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="bi bi-instagram"></i>
+
+                        <div>
+                            <h4>Instagram</h4>
+                            <a href="https://www.instagram.com/yuri_nadd/"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                @yuri_nadd
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="bi bi-tiktok"></i>
+
+                        <div>
+                            <h4>TikTok</h4>
+                            <a href="https://www.tiktok.com/@narrygrl"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                @narrygrl
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="bi bi-telegram"></i>
+
+                        <div>
+                            <h4>Telegram</h4>
+                            <a href="https://t.me/Yuri_nad1"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                @Yuri_nad1
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer class="footer">
+
+            <p>
+                © 2026 Nardos Ayalneh. Built with care and creativity.
+            </p>
+
+            <a href="#home" aria-label="Back to top">
+                <i class="bi bi-arrow-up"></i>
+            </a>
+
+        </footer>
+
+    </main>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
